@@ -37,3 +37,16 @@ body {
   line-height: 1.56;
   font-size: var(--fs-body);
 }
+
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
+@media (width > 37.5em) /* 600px */ {
+  .wrapper {
+    width: calc(100% - 3.75rem);
+    border: 1px solid red;
+  }
+}
