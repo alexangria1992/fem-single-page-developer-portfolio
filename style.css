@@ -38,6 +38,26 @@ body {
   font-size: var(--fs-body);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+}
+p {
+  line-height: 1.5;
+}
 a {
   transition: color var(--transition);
 }
@@ -122,4 +142,36 @@ a:hover {
     flex: 1;
     margin-inline-end: auto;
   }
+}
+
+/*  */
+
+.hero {
+}
+
+.hero__wrappper {
+  /* position: relative; */
+}
+
+.hero__image {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0;
+  outline: 2px solid lime;
+  display: block;
+}
+
+.hero__text {
+  text-align: center;
+  margin-top: 335px;
+}
+
+.hero__headline {
+}
+
+.hero__description {
+}
+
+.hero__contact {
 }

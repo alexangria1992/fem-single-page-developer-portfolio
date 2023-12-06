@@ -92,8 +92,8 @@
 
     <main id="main">
       <section class="hero">
-        <div class="wrapper">
-          <picture class="hero__image">
+        <div class="wrapper hero__wrapper">
+          <picture>
             <source
               media="(min-width: 62.5em)"
               srcset="/assets/images/image-profile-desktop.webp"
@@ -102,7 +102,13 @@
               media="(min-width: 37.5em )"
               srcset="/assets/images/image-profile-tablet.webp"
             />
-            <img src="/assets/images/image-profile-mobile.webp" alt="" />
+            <img
+              class="hero__image"
+              src="/assets/images/image-profile-mobile.webp"
+              width="174"
+              height="383"
+              alt=""
+            />
           </picture>
           <!-- <img
             src="/assets/images/image-profile-mobile.webp"
