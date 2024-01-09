@@ -116,6 +116,11 @@ a:hover {
   }
 }
 
+/* UTILITY */
+.bottom-border {
+  border-bottom: 1px solid var(--text2);
+}
+
 /* HEADER */
 
 .header {
@@ -196,7 +201,7 @@ a:hover {
 .hero__wrapper {
   /* position: relative; */
   padding-bottom: 80px;
-  border-bottom: 2px solid var(--text2);
+  border-bottom: 1px solid var(--text2);
 }
 
 .hero__image {
@@ -382,4 +387,34 @@ h1 > span {
     top: 0px;
     translate: -50% -50%;
   }
+}
+
+/* SKILLS */
+.skills {
+  position: relative;
+  /* outline: 2px solid aqua; */
+}
+
+.skills__rings {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: 0 50%;
+}
+
+.skills__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-block: 40px;
+}
+
+.skills__item {
+  text-align: center;
+}
+
+.skills__title {
+  font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
+  line-height: 1.17;
+  margin-bottom: 2px;
 }
